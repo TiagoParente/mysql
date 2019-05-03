@@ -18,11 +18,16 @@ Ou
 
 4. Inicie o serviço: ***$ mysql -u root***
 5. Agora iremos mudar a senha:
+
 > mysql> **use mysql;**
-mysql> **update user set authentication_string=PASSWORD("SuaSenha") where User='root';**
-mysql> **update user set plugin="mysql_native_password";**
-mysql> **flush privileges;**
-mysql> **quit;**
+
+> mysql> **update user set authentication_string=PASSWORD("SuaSenha") where User='root';**
+
+> mysql> **update user set plugin="mysql_native_password";**
+
+> mysql> **flush privileges;**
+
+> mysql> **quit;**
 
 6. Reinicie a maquina.
 
